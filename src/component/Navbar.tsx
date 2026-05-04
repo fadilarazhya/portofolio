@@ -27,9 +27,11 @@ const Navbar: React.FC = () => {
         visible ? "translate-y-0" : "-translate-y-full"
       }`}>
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-6">
-        <span className="self-center whitespace-nowrap text-2xl font-semibold text-teal-500">
+        <a
+          href="/"
+          className="self-center whitespace-nowrap text-2xl font-semibold text-teal-500">
           Fadila Razhya
-        </span>
+        </a>
         <div className="flex items-center md:hidden">
           {/* Burger Menu */}
           <button

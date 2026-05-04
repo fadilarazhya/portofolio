@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="min-h-screen flex items-center bg-white dark:bg-gray-900">
+    <section className="px-8 min-h-screen flex items-center bg-white dark:bg-gray-900">
       <div
         id="about"
         className="mx-auto max-w-screen-xl grid items-center gap-10 px-4 py-8 lg:grid-cols-2 lg:px-6 lg:py-16">
