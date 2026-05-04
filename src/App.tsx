@@ -1,3 +1,4 @@
+import "flowbite/dist/flowbite.min.js";
 import "./App.css";
 import Contact from "./component/Contact";
 import Footer from "./component/Footer";
