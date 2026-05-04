@@ -1,0 +1,7 @@
+.contact {
+    @apply bg-white dark:bg-gray-900;
+}
+
+.contact-container {
+    @apply flex flex-col items-center justify-center mx-auto max-w-screen-xl px-8 py-8 text-center lg:px-12 lg:py-16;
+}

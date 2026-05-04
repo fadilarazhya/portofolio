@@ -1,0 +1,95 @@
+.project-section {
+  @apply min-h-screen flex items-center px-8 py-8 antialiased;
+  @apply bg-white dark:bg-gray-900;
+  @apply md:py-16;
+}
+
+.project-container {
+  @apply max-w-screen-xl px-4 mx-auto;
+  @apply 2xl:px-0;
+}
+
+.project-header {
+  @apply py-8;
+  @apply lg:px-10 lg:py-16;
+}
+
+.project-grid {
+  @apply lg:grid lg:grid-cols-2 lg:gap-8;
+  @apply xl:gap-16;
+}
+
+.project-image-wrapper {
+  @apply shrink-0 max-w-md mx-auto overflow-hidden rounded-md;
+  @apply bg-cover bg-[url('/img/obm.jpg')];
+  @apply lg:max-w-lg;
+}
+
+.project-image-overlay {
+  @apply bg-cyan-700 bg-opacity-25 rounded-md h-auto;
+  @apply hover:bg-opacity-0;
+  @apply transition-all duration-500 ease-in-out;
+}
+
+.project-image {
+  @apply w-full opacity-50;
+  @apply hover:opacity-100;
+  @apply transition-opacity duration-500 ease-in-out;
+}
+
+.project-content {
+  @apply mt-6;
+  @apply sm:mt-8;
+  @apply lg:mt-0;
+}
+
+.project-title {
+  @apply inline-flex items-center text-lg font-semibold;
+  @apply text-gray-900 dark:text-white;
+  @apply sm:text-xl;
+}
+
+.project-link {
+  @apply pl-4;
+}
+
+.project-link-icon {
+  @apply w-6 h-6;
+  @apply text-gray-800 dark:text-white;
+  @apply hover:text-cyan-500;
+  @apply transition-colors duration-300;
+}
+
+.project-divider {
+  @apply my-2 border-gray-200 dark:border-gray-800;
+  @apply md:my-4;
+}
+
+.project-description {
+  @apply mb-6 text-gray-500 dark:text-gray-400;
+}
+
+.project-highlight {
+  @apply text-cyan-500;
+}
+
+.project-tech-stack {
+  @apply flex items-center space-x-4;
+}
+
+.tech-icon {
+  @apply w-6 h-6;
+  @apply sm:w-8 sm:h-8;
+}
+
+.tech-icon--react {
+  @apply fill-[#61DAFB];
+}
+
+.tech-icon--tailwind {
+  @apply fill-[#38bdf8];
+}
+
+.tech-icon--express {
+  @apply dark:filter dark:drop-shadow-[0_0_1px_rgba(255,255,255,0.8)];
+}

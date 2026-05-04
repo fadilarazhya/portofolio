@@ -1,0 +1,90 @@
+.tools-section {
+  @apply bg-white dark:bg-gray-900;
+}
+
+.tools-container {
+  @apply flex flex-col justify-center min-h-screen;
+  @apply lg:py-16 mx-auto max-w-screen-xl px-4 text-center;
+}
+
+.tools-grid {
+  @apply grid grid-cols-3 gap-2 pb-24 fill-gray-500 gap-y-8;
+  @apply sm:gap-y-14;
+  @apply lg:grid-cols-9;
+  @apply dark:fill-gray-400;
+  @apply transition-colors duration-300;
+}
+
+.tool-icon {
+  @apply w-10 h-10 transition-colors duration-300;
+}
+
+/* Figma paths with hover colors */
+.figma-path-1 {
+  @apply fill-gray-600 dark:fill-gray-500;
+  @apply group-hover:fill-[#0acf83];
+  @apply transition-colors duration-300;
+}
+
+.figma-path-2 {
+  @apply fill-gray-600 dark:fill-gray-500;
+  @apply group-hover:fill-[#a259ff];
+  @apply transition-colors duration-300;
+}
+
+.figma-path-3 {
+  @apply fill-gray-600 dark:fill-gray-500;
+  @apply group-hover:fill-[#f24e1e];
+  @apply transition-colors duration-300;
+}
+
+.figma-path-4 {
+  @apply fill-gray-500 dark:fill-gray-400;
+  @apply group-hover:fill-[#ff7262];
+  @apply transition-colors duration-300;
+}
+
+.figma-path-5 {
+  @apply fill-gray-500 dark:fill-gray-400;
+  @apply group-hover:fill-[#1abcfe];
+  @apply transition-colors duration-300;
+}
+
+/* Individual icon hover states */
+.html-icon:hover {
+  @apply fill-[#E44D26];
+}
+
+.css-icon:hover {
+  @apply fill-[#1572B6];
+}
+
+.js-path-bg {
+  @apply fill-gray-500 dark:fill-gray-400;
+  @apply group-hover:fill-[#F0DB4F];
+  @apply transition-colors duration-300;
+}
+
+.js-path-text {
+  @apply fill-[#323330];
+}
+
+.ts-icon:hover {
+  @apply fill-[#007acc];
+}
+
+.tailwind-icon:hover {
+  @apply fill-[#38bdf8];
+}
+
+.git-icon:hover {
+  @apply fill-[#F34F29];
+}
+
+.react-icon:hover {
+  @apply fill-[#61DAFB];
+}
+
+.node-icon:hover {
+  @apply fill-[#83CD29];
+}

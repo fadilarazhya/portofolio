@@ -1,0 +1,5 @@
+export { default as Hero } from "./hero/HeroSection"
+export { default as Contact } from "./contact/Contact"
+export { default as About } from "./about/About"
+export { default as Project } from "./project/Project"
+export { default as Tools } from "./tools/Tools"
