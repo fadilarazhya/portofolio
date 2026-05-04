@@ -1,9 +1,8 @@
 import { useState } from "react"
 import NavLink from "../navlink/Navlink"
-import "./Navbar.css"
 import Toggle from "../../ui/toggle/Toggle"
 import useScroll from "../../../hooks/useScroll"
-
+import "./Navbar.css"
 
 const NAV_ITEMS = [
     { href: "#about", label: "About" },
@@ -39,6 +38,7 @@ const Navbar = () => {
                     Fadila Razhya
                 </a>
 
+                {/* NOTE: Mobile wrapper - hamburger menu only, Toggle moved to menu list */}
                 <div className="navbar-mobile-wrapper">
                     <button
                         onClick={handleToggleMenu}
@@ -64,7 +64,6 @@ const Navbar = () => {
                             />
                         </svg>
                     </button>
-                    <Toggle />
                 </div>
 
                 <div className={menuClass} id="navbar-sticky">
@@ -74,7 +73,7 @@ const Navbar = () => {
                                 {item.label}
                             </NavLink>
                         ))}
-                        <li className="hidden md:flex">
+                        <li>
                             <Toggle />
                         </li>
                     </ul>
