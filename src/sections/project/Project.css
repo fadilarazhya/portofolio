@@ -1,11 +1,12 @@
 .project-section {
-  @apply min-h-screen flex items-center px-8 py-8 antialiased;
+  @apply min-h-screen flex items-center px-4 py-8 antialiased;
+  @apply sm:px-8;
   @apply bg-white dark:bg-gray-900;
   @apply md:py-16;
 }
 
 .project-container {
-  @apply max-w-screen-xl px-4 mx-auto;
+  @apply w-full max-w-screen-xl px-4 mx-auto;
   @apply 2xl:px-0;
 }
 
@@ -25,9 +26,8 @@
 }
 
 .project-image-wrapper {
-  @apply shrink-0 max-w-md mx-auto overflow-hidden rounded-md;
+  @apply shrink-0 w-full overflow-hidden rounded-md;
   @apply bg-cover bg-center;
-  @apply lg:max-w-lg;
 }
 
 .project-image-overlay {
@@ -79,7 +79,7 @@
 }
 
 .project-tech-stack {
-  @apply flex items-center space-x-4;
+  @apply flex items-center flex-wrap gap-3;
 }
 
 .tech-icon {
@@ -101,6 +101,14 @@
 
 .tech-icon--nextjs {
   @apply dark:filter dark:invert;
+}
+
+.project-card {
+  @apply w-full;
+}
+
+.project-card-content {
+  @apply mt-4 px-1;
 }
 
 .project-groups {

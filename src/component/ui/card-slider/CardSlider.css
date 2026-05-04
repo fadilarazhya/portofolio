@@ -3,7 +3,7 @@
 }
 
 .card-slider-viewport {
-  @apply overflow-hidden;
+  @apply overflow-hidden flex-1 min-w-0;
 }
 
 .card-slider-track {
@@ -14,22 +14,42 @@
 
 .card-slider-item {
   flex: 0 0 calc(100% / var(--visible, 1));
-  padding: 0 0.75rem;
+  padding: 0 0.25rem;
   box-sizing: border-box;
 }
 
+@media (min-width: 768px) {
+  .card-slider-item {
+    padding: 0 0.75rem;
+  }
+}
+
 .card-slider-row {
-  @apply flex items-center gap-3;
+  @apply relative flex items-center md:gap-3;
 }
 
 .card-slider-btn {
-  @apply flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full;
-  @apply bg-gray-100 dark:bg-gray-700;
-  @apply text-gray-600 dark:text-gray-300;
-  @apply hover:bg-teal-100 hover:text-teal-600;
-  @apply dark:hover:bg-teal-900 dark:hover:text-teal-400;
-  @apply disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-gray-100 disabled:dark:hover:bg-gray-700 disabled:hover:text-gray-600;
+  @apply absolute top-1/2 -translate-y-1/2 z-10;
+  @apply flex items-center justify-center w-8 h-8 rounded-full;
+  @apply bg-black/30 text-white;
+  @apply hover:bg-black/55;
+  @apply disabled:opacity-20 disabled:cursor-not-allowed;
   @apply transition-all duration-200;
+  @apply md:static md:translate-y-0 md:flex-shrink-0;
+  @apply md:w-9 md:h-9;
+  @apply md:bg-gray-100 md:dark:bg-gray-700;
+  @apply md:text-gray-600 md:dark:text-gray-300;
+  @apply md:hover:bg-teal-100 md:hover:text-teal-600;
+  @apply md:dark:hover:bg-teal-900 md:dark:hover:text-teal-400;
+  @apply md:disabled:hover:bg-gray-100 md:disabled:dark:hover:bg-gray-700 md:disabled:hover:text-gray-600;
+}
+
+.card-slider-btn--prev {
+  @apply left-2 md:left-auto;
+}
+
+.card-slider-btn--next {
+  @apply right-2 md:right-auto;
 }
 
 .card-slider-btn svg {

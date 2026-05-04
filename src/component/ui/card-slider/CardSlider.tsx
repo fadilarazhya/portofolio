@@ -34,7 +34,7 @@ const CardSlider = ({ children }: { children: ReactNode }) => {
       <div className="card-slider-row">
         {pages > 1 && (
           <button
-            className="card-slider-btn"
+            className="card-slider-btn card-slider-btn--prev"
             onClick={() => setPage(p => p - 1)}
             disabled={page === 0}
             aria-label="Previous"
@@ -62,7 +62,7 @@ const CardSlider = ({ children }: { children: ReactNode }) => {
 
         {pages > 1 && (
           <button
-            className="card-slider-btn"
+            className="card-slider-btn card-slider-btn--next"
             onClick={() => setPage(p => p + 1)}
             disabled={page === pages - 1}
             aria-label="Next"
