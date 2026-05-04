@@ -13,13 +13,15 @@
   @apply lg:grid-cols-9;
   @apply dark:fill-gray-400;
   @apply transition-colors duration-300;
+  @apply justify-items-center;
+  @apply px-4;
+  @apply sm:px-0;
 }
 
 .tool-icon {
   @apply w-10 h-10 transition-colors duration-300;
 }
 
-/* Figma paths with hover colors */
 .figma-path-1 {
   @apply fill-gray-600 dark:fill-gray-500;
   @apply group-hover:fill-[#0acf83];
@@ -50,7 +52,6 @@
   @apply transition-colors duration-300;
 }
 
-/* Individual icon hover states */
 .html-icon:hover {
   @apply fill-[#E44D26];
 }
@@ -83,6 +84,11 @@
 
 .react-icon:hover {
   @apply fill-[#61DAFB];
+}
+
+.nextjs-icon:hover {
+  @apply fill-[#000000];
+  @apply dark:fill-[#ffffff];
 }
 
 .node-icon:hover {
