@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+/* input.css */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
