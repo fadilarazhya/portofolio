@@ -1,9 +1,7 @@
 const Contact: React.FC = () => {
   return (
-    <section
-      id="contact"
-      className="border-t border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900">
-      <div className="mx-auto max-w-screen-xl px-8 py-8 text-center lg:px-12 lg:py-16">
+    <section id="contact" className="bg-white dark:bg-gray-900">
+      <div className="flex flex-col items-center justify-center mx-auto max-w-screen-xl px-8 py-8 text-center lg:px-12 lg:py-16">
         <h1 className="mb-6 text-2xl font-semibold leading-none tracking-tight text-gray-900 dark:text-white lg:text-5xl">
           Get in Touch
         </h1>

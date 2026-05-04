@@ -1,7 +1,7 @@
 const Tools = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
-      <div className="lg:py-16 mx-auto max-w-screen-xl px-4 text-center">
+    <section id="tools" className="bg-white dark:bg-gray-900">
+      <div className="flex flex-col justify-center min-h-screen lg:py-16 mx-auto max-w-screen-xl px-4 text-center">
         <h2 className="mb-6 text-2xl sm:text-4xl font-semibold leading-none tracking-tight text-gray-900 dark:text-white lg:text-5xl">
           Tools
         </h2>
