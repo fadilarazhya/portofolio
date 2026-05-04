@@ -19,15 +19,20 @@
   @apply xl:gap-16;
 }
 
+.project-spacer {
+  @apply my-16;
+  @apply lg:my-24;
+}
+
 .project-image-wrapper {
   @apply shrink-0 max-w-md mx-auto overflow-hidden rounded-md;
-  @apply bg-cover bg-[url('/img/obm.jpg')];
+  @apply bg-cover bg-center;
   @apply lg:max-w-lg;
 }
 
 .project-image-overlay {
-  @apply bg-cyan-700 bg-opacity-25 rounded-md h-auto;
-  @apply hover:bg-opacity-0;
+  @apply relative bg-cyan-700/25 rounded-md h-auto;
+  @apply hover:bg-cyan-700/0;
   @apply transition-all duration-500 ease-in-out;
 }
 
