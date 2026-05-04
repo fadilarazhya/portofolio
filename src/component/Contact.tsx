@@ -4,7 +4,7 @@ const Contact: React.FC = () => {
       id="contact"
       className="border-t border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900">
       <div className="mx-auto max-w-screen-xl px-8 py-8 text-center lg:px-12 lg:py-16">
-        <h1 className="mb-6 text-4xl font-semibold leading-none tracking-tight text-gray-900 dark:text-white lg:text-5xl">
+        <h1 className="mb-6 text-2xl font-semibold leading-none tracking-tight text-gray-900 dark:text-white lg:text-5xl">
           Get in Touch
         </h1>
         <p className="mb-12 text-base font-normal text-gray-500 dark:text-gray-400 sm:px-16 lg:mx-64 lg:mb-16 lg:text-lg">
