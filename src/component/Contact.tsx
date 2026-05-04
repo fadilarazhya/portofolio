@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
           Feel free to reach out—whether you have a question or just want to say
           hi, I'll do my best to respond!
         </p>
-        <button className="relative mb-8 me-2 inline-flex items-center justify-center overflow-hidden rounded-lg border border-teal-500 p-0.5 text-base font-medium text-teal-700 hover:bg-teal-500 hover:text-white focus:outline-none focus:ring-4 dark:text-white lg:mb-16">
+        <button className="relative mb-8 me-2 inline-flex items-center justify-center overflow-hidden rounded-lg border border-teal-500 p-0.5 text-base font-medium text-gray-900 hover:bg-teal-500 hover:text-white focus:outline-none focus:ring-4 dark:text-white lg:mb-16">
           <a
             href="mailto:fadilarazhya03@gmail.com"
             className="relative rounded-md border-teal-500 px-5 py-3 font-medium transition-all duration-75 ease-in">

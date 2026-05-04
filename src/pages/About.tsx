@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <section>
-      <section id="about" className="bg-white dark:bg-gray-900">
+      <section id="about" className="px-8 bg-white dark:bg-gray-900">
         <div className="mx-auto grid max-w-screen-xl gap-8 px-4 py-8 lg:grid-cols-2 lg:gap-16 lg:py-16">
           <div className="flex flex-col justify-center">
             <h1 className="mb-4 text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
@@ -14,10 +14,10 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="px-8 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-screen-xl items-center gap-16 px-4 py-8 lg:grid lg:grid-cols-2 lg:px-6 lg:py-16">
-          <div className="font-light text-gray-500 dark:text-gray-400 sm:text-lg">
-            <h2 className="mb-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <div className="text-gray-500 dark:text-gray-400 sm:text-lg">
+            <h2 className="mb-4 text-4xl font-semibold tracking-tight text-gray-900 dark:text-white">
               About Me
             </h2>
             <p className="mb-4">
@@ -32,7 +32,7 @@ const About = () => {
               problem solvers. Small enough to be simple and quick.
             </p>
           </div>
-          <div className="mx-24 mt-8 flex gap-4">
+          <div className="mx-24 mt-8 flex gap-4 justify-center items-center">
             <img
               className="w-3xs lg:w-sm rounded-lg"
               src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Sacred_lotus_Nelumbo_nucifera.jpg"
