@@ -7,6 +7,7 @@ import "./Navbar.css"
 const NAV_ITEMS = [
     { href: "#about", label: "About" },
     { href: "#project", label: "Project" },
+    { href: "#design-process", label: "Design Process" },
     { href: "#tools", label: "Tools" },
     { href: "#contact", label: "Contact" },
 ]
