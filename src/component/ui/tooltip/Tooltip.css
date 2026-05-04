@@ -1,0 +1,47 @@
+.tooltip-wrapper {
+    @apply relative inline-block;
+}
+
+.tooltip-content {
+    @apply invisible absolute z-50 rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 whitespace-nowrap dark:bg-gray-700;
+}
+
+.tooltip-wrapper:hover .tooltip-content {
+    @apply visible opacity-100;
+}
+
+.tooltip-content--top {
+    @apply bottom-full left-1/2 mb-2 -translate-x-1/2;
+}
+
+.tooltip-content--bottom {
+    @apply top-full left-1/2 mt-2 -translate-x-1/2;
+}
+
+.tooltip-content--left {
+    @apply right-full top-1/2 mr-2 -translate-y-1/2;
+}
+
+.tooltip-content--right {
+    @apply left-full top-1/2 ml-2 -translate-y-1/2;
+}
+
+.tooltip-arrow {
+    @apply absolute h-2 w-2 rotate-45 bg-gray-900 dark:bg-gray-700;
+}
+
+.tooltip-content--top .tooltip-arrow {
+    @apply -bottom-1 left-1/2 -translate-x-1/2;
+}
+
+.tooltip-content--bottom .tooltip-arrow {
+    @apply -top-1 left-1/2 -translate-x-1/2;
+}
+
+.tooltip-content--left .tooltip-arrow {
+    @apply -right-1 top-1/2 -translate-y-1/2;
+}
+
+.tooltip-content--right .tooltip-arrow {
+    @apply -left-1 top-1/2 -translate-y-1/2;
+}

@@ -1,0 +1,25 @@
+.footer {
+  @apply border-t border-gray-200 bg-white p-4 antialiased shadow;
+  @apply dark:border-gray-600 dark:bg-gray-900;
+  @apply sm:flex sm:items-center sm:justify-between sm:p-6;
+  @apply xl:p-8;
+}
+
+.footer-text {
+  @apply mb-4 text-center text-sm text-gray-500;
+  @apply dark:text-gray-400;
+  @apply sm:mb-0;
+}
+
+.footer-links {
+  @apply flex items-center justify-center space-x-1;
+}
+
+.footer-icon {
+  @apply h-4 w-4;
+  @apply text-gray-500;
+  @apply group-hover:text-gray-900;
+  @apply dark:text-gray-400;
+  @apply dark:group-hover:text-white;
+  @apply transition-colors duration-300;
+}

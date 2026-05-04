@@ -1,0 +1,35 @@
+.icon-wrapper {
+  @apply relative flex justify-center items-center cursor-pointer;
+  @apply transition-all duration-300;
+}
+
+.icon-wrapper--sm {
+  @apply w-6 h-6;
+}
+
+.icon-wrapper--md {
+  @apply w-10 h-10;
+}
+
+.icon-wrapper--lg {
+  @apply w-12 h-12;
+}
+
+.icon-wrapper-tooltip {
+  @apply absolute z-50 px-3 py-2 text-sm font-medium rounded-lg shadow-sm;
+  @apply text-white bg-gray-900 dark:bg-gray-700;
+  @apply bottom-full left-1/2 -translate-x-1/2 mb-2;
+  @apply opacity-0 invisible;
+  @apply transition-all duration-300;
+  @apply whitespace-nowrap;
+}
+
+.icon-wrapper-tooltip--visible {
+  @apply opacity-100 visible;
+}
+
+.icon-wrapper-tooltip-arrow {
+  @apply absolute w-2 h-2 bg-gray-900 dark:bg-gray-700;
+  @apply top-full left-1/2 -translate-x-1/2 -translate-y-1/2;
+  @apply rotate-45;
+}
