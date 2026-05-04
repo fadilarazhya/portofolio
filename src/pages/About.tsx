@@ -1,5 +1,5 @@
 const About = () => {
-  return (
+  return ( //test
     <section className="px-8 min-h-screen flex items-center bg-white dark:bg-gray-900">
       <div
         id="about"
