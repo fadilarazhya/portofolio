@@ -1,0 +1,51 @@
+.card-slider {
+  @apply w-full;
+}
+
+.card-slider-viewport {
+  @apply overflow-hidden;
+}
+
+.card-slider-track {
+  display: flex;
+  width: 100%;
+  transition: transform 350ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card-slider-item {
+  flex: 0 0 calc(100% / var(--visible, 1));
+  padding: 0 0.75rem;
+  box-sizing: border-box;
+}
+
+.card-slider-row {
+  @apply flex items-center gap-3;
+}
+
+.card-slider-btn {
+  @apply flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full;
+  @apply bg-gray-100 dark:bg-gray-700;
+  @apply text-gray-600 dark:text-gray-300;
+  @apply hover:bg-teal-100 hover:text-teal-600;
+  @apply dark:hover:bg-teal-900 dark:hover:text-teal-400;
+  @apply disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-gray-100 disabled:dark:hover:bg-gray-700 disabled:hover:text-gray-600;
+  @apply transition-all duration-200;
+}
+
+.card-slider-btn svg {
+  @apply w-5 h-5;
+}
+
+.card-slider-dots {
+  @apply flex items-center justify-center gap-2 pt-4;
+}
+
+.card-slider-dot {
+  @apply h-2 rounded-full cursor-pointer;
+  @apply w-2 bg-gray-300 dark:bg-gray-600;
+  @apply transition-all duration-300;
+}
+
+.card-slider-dot--active {
+  @apply w-5 bg-teal-500;
+}

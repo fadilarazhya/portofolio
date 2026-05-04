@@ -98,3 +98,18 @@
 .tech-icon--express {
   @apply dark:filter dark:drop-shadow-[0_0_1px_rgba(255,255,255,0.8)];
 }
+
+.tech-icon--nextjs {
+  @apply dark:filter dark:invert;
+}
+
+.project-groups {
+  @apply flex flex-col gap-14;
+}
+
+.project-subsection-heading {
+  @apply text-xl font-semibold pl-4 py-3 mb-4;
+  @apply text-gray-800 dark:text-gray-200;
+  @apply border-l-4 border-teal-500;
+  @apply sm:text-2xl;
+}
