@@ -14,7 +14,7 @@ const Project = () => {
       className="px-8 py-8 bg-white md:py-16 dark:bg-gray-900 antialiased">
       <div className="max-w-screen-xl px-4 mx-auto 2xl:px-0">
         <div className="py-8 lg:px-10 lg:py-16">
-          <h1 className="mb-6 text-4xl font-semibold leading-none tracking-tight text-gray-900 dark:text-white lg:text-5xl">
+          <h1 className="mb-6 text-2xl sm:text-4xl font-semibold leading-none tracking-tight text-gray-900 dark:text-white lg:text-5xl">
             Project
           </h1>
         </div>
@@ -29,7 +29,7 @@ const Project = () => {
             </div>
           </div>
           <div className="mt-6 sm:mt-8 lg:mt-0">
-            <h1 className=" inline-flex items-center text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">
+            <h1 className=" inline-flex items-center text-lg font-semibold text-gray-900 sm:text-xl dark:text-white">
               Company Profile
               <a
                 href="https://orelabahari.co.id/"
