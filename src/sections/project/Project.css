@@ -31,8 +31,8 @@
 }
 
 .project-image-overlay {
-  @apply relative bg-cyan-700/25 rounded-md h-auto;
-  @apply hover:bg-cyan-700/0;
+  @apply relative bg-teal-700/25 rounded-md h-auto;
+  @apply hover:bg-teal-700/0;
   @apply transition-all duration-500 ease-in-out;
 }
 
@@ -61,7 +61,7 @@
 .project-link-icon {
   @apply w-6 h-6;
   @apply text-gray-800 dark:text-white;
-  @apply hover:text-cyan-500;
+  @apply hover:text-teal-500;
   @apply transition-colors duration-300;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .project-highlight {
-  @apply text-cyan-500;
+  @apply text-teal-500;
 }
 
 .project-tech-stack {
