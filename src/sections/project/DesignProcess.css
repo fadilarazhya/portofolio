@@ -1,0 +1,101 @@
+.design-process-section {
+  @apply py-16 px-8 antialiased;
+  @apply bg-white dark:bg-gray-900;
+}
+
+.design-process-container {
+  @apply max-w-screen-xl px-4 mx-auto;
+  @apply 2xl:px-0;
+}
+
+.design-process-header {
+  @apply mb-8 text-center;
+}
+
+.design-process-intro {
+  @apply mt-3 max-w-2xl mx-auto;
+  @apply text-lg leading-relaxed text-gray-500 dark:text-gray-400;
+}
+
+.design-figma-btn {
+  @apply inline-flex items-center gap-2 mt-5 mx-auto;
+  @apply px-4 py-2 rounded-lg text-sm font-medium mb-7;
+  @apply border border-gray-200 dark:border-gray-700;
+  @apply text-gray-700 dark:text-gray-300;
+  @apply hover:border-teal-500 hover:text-teal-500 dark:hover:border-teal-400 dark:hover:text-teal-400;
+  @apply transition-colors duration-200;
+}
+
+.design-figma-icon {
+  @apply w-4 h-4 flex-shrink-0;
+}
+
+.design-slider {
+  @apply mx-auto;
+  max-width: 860px;
+}
+
+.design-slider-frame {
+  @apply relative overflow-hidden rounded-xl;
+  @apply bg-gray-100 dark:bg-gray-800;
+  aspect-ratio: 4 / 3;
+}
+
+.design-slider-img {
+  @apply w-full h-full object-contain;
+  animation: design-fade 0.3s ease-in-out;
+}
+
+@keyframes design-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.design-slide-badge {
+  @apply absolute top-3 left-3 z-10;
+  @apply px-3 py-1 rounded-full;
+  @apply text-xs font-semibold tracking-wide;
+  @apply bg-teal-500 text-white;
+}
+
+.design-slider-arrow {
+  @apply absolute top-1/2 -translate-y-1/2 z-10;
+  @apply flex items-center justify-center;
+  @apply w-9 h-9 rounded-full;
+  @apply bg-black/40 hover:bg-black/65 text-white;
+  @apply transition-colors duration-200;
+}
+
+.design-slider-arrow svg {
+  @apply w-5 h-5;
+}
+
+.design-slider-arrow--prev {
+  @apply left-3;
+}
+
+.design-slider-arrow--next {
+  @apply right-3;
+}
+
+.design-slider-footer {
+  @apply flex items-center justify-between gap-4 px-1 pt-3;
+}
+
+.design-slide-caption {
+  @apply flex-1 text-sm text-gray-500 dark:text-gray-400;
+}
+
+.design-slider-dots {
+  @apply flex flex-shrink-0 items-center gap-2;
+}
+
+.design-slider-dot {
+  @apply h-2 w-2 rounded-full;
+  @apply bg-gray-300 dark:bg-gray-600;
+  @apply transition-all duration-300;
+}
+
+.design-slider-dot--active {
+  @apply w-5 bg-teal-500;
+}

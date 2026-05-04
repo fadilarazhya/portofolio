@@ -5,6 +5,7 @@ import Hero from "./sections/hero/HeroSection"
 import Navbar from "./component/layout/navbar/Navbar"
 import About from "./sections/about/About"
 import Project from "./sections/project/Project"
+import DesignProcess from "./sections/project/DesignProcess"
 import Tools from "./sections/tools/Tools"
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <Hero />
       <About />
       <Project />
+      <DesignProcess />
       <Tools />
       <Contact />
       <Footer />
