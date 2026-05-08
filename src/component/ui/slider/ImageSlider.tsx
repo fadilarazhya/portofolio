@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { createPortal } from 'react-dom'
 import './ImageSlider.css'
 
 interface SlideImage {
@@ -58,7 +59,7 @@ const ImageSlider = ({ images }: ImageSliderProps) => {
         )}
       </div>
 
-      {modalOpen && (
+      {modalOpen && createPortal(
         <div
           className="slider-modal"
           onClick={() => setModalOpen(false)}
@@ -81,7 +82,8 @@ const ImageSlider = ({ images }: ImageSliderProps) => {
             className="slider-modal-img"
             onClick={e => e.stopPropagation()}
           />
-        </div>
+        </div>,
+        document.body
       )}
     </>
   )
