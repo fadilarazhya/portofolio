@@ -121,3 +121,7 @@
   @apply border-l-4 border-teal-500;
   @apply sm:text-2xl;
 }
+
+.project-subsection-note {
+  @apply text-sm text-gray-500 dark:text-gray-400 italic mb-6;
+}

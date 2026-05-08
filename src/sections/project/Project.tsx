@@ -21,6 +21,7 @@ interface ProjectData {
 interface ProjectGroup {
   id: string
   label: string
+  note?: string
   projects: ProjectData[]
 }
 
@@ -35,15 +36,7 @@ const techIcons: Record<string, ReactNode> = {
   ),
   'Next.js': (
     <svg className="tech-icon tech-icon--nextjs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-      <circle cx="64" cy="64" r="64" />
-      <path fill="url(#nextjs-grad)" d="M106.317 112.014 49.167 38.4H38.4v51.179h8.614V48.433l52.54 67.963a64.216 64.216 0 0 0 6.763-4.382z" />
-      <path fill="#fff" d="M81.778 38.4h8.533v51.2h-8.533z" />
-      <defs>
-        <linearGradient id="nextjs-grad" x1="108" y1="109" x2="86" y2="76" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#fff" />
-          <stop offset="1" stopColor="#fff" stopOpacity="0" />
-        </linearGradient>
-      </defs>
+      <path d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z" />
     </svg>
   ),
   'TypeScript': (
@@ -187,7 +180,12 @@ const personalProjects: ProjectData[] = [
 ]
 
 const projectGroups: ProjectGroup[] = [
-  { id: 'bank-raya', label: "Bank Raya's Projects", projects: bankRayaProjects },
+  {
+    id: 'bank-raya',
+    label: "Bank Raya's Projects",
+    note: "These are internal web applications built exclusively for Bank Raya's employees. As proprietary tools, live links are not publicly available.",
+    projects: bankRayaProjects,
+  },
   { id: 'obm', label: 'OBM Project', projects: obmProjects },
   { id: 'personal', label: 'Personal Projects', projects: personalProjects },
 ]
@@ -247,6 +245,7 @@ const Project = () => (
         {projectGroups.map(group => (
           <div key={group.id} className="project-subsection">
             <h2 className="project-subsection-heading">{group.label}</h2>
+            {group.note && <p className="project-subsection-note">{group.note}</p>}
             {group.projects.length > 1 ? (
               <CardSlider>
                 {group.projects.map(p => (
