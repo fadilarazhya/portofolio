@@ -1,5 +1,6 @@
 import { useState, useEffect, type ReactNode } from 'react'
 import React from 'react'
+import CardSliderButton from './CardSliderButton'
 import './CardSlider.css'
 
 const useVisible = () => {
@@ -33,16 +34,7 @@ const CardSlider = ({ children }: { children: ReactNode }) => {
     <div className="card-slider">
       <div className="card-slider-row">
         {pages > 1 && (
-          <button
-            className="card-slider-btn card-slider-btn--prev"
-            onClick={() => setPage(p => p - 1)}
-            disabled={page === 0}
-            aria-label="Previous"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-            </svg>
-          </button>
+          <CardSliderButton direction="prev" onClick={() => setPage(p => p - 1)} disabled={page === 0} />
         )}
 
         <div className="card-slider-viewport">
@@ -61,16 +53,7 @@ const CardSlider = ({ children }: { children: ReactNode }) => {
         </div>
 
         {pages > 1 && (
-          <button
-            className="card-slider-btn card-slider-btn--next"
-            onClick={() => setPage(p => p + 1)}
-            disabled={page === pages - 1}
-            aria-label="Next"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-            </svg>
-          </button>
+          <CardSliderButton direction="next" onClick={() => setPage(p => p + 1)} disabled={page === pages - 1} />
         )}
       </div>
 

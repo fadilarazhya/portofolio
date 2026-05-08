@@ -41,7 +41,7 @@
   @apply md:text-gray-600 md:dark:text-gray-300;
   @apply md:hover:bg-teal-100 md:hover:text-teal-600;
   @apply md:dark:hover:bg-teal-900 md:dark:hover:text-teal-400;
-  @apply md:disabled:hover:bg-gray-100 md:disabled:dark:hover:bg-gray-700 md:disabled:hover:text-gray-600;
+  @apply md:disabled:pointer-events-none;
 }
 
 .card-slider-btn--prev {
